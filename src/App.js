@@ -18,15 +18,16 @@ export default function App() {
   return (
     <Router>
       <div  style={{height: '100%'}}>
+
         <Nav style={{  paddingLeft:'20%', backgroundColor: '#000080'}}variant="tabs" >
   <Nav.Item>
-    <Nav.Link  eventKey="link-1"><Link to="/users" style={{ textDecoration: 'none', fontWeight: 'bold', fontSize:18 }}>Users</Link></Nav.Link>
+    <Nav.Link href="/users" eventKey="link-1"><Link to="/users" style={{ textDecoration: 'none', fontWeight: 'bold', fontSize:18 }}>Users</Link></Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="link-2"><Link to="/leagues" style={{ textDecoration: 'none',fontWeight: 'bold', fontSize:18 }}>Leagues</Link></Nav.Link>
+    <Nav.Link  href="/leagues" eventKey="link-2"><Link to="/leagues" style={{ textDecoration: 'none',fontWeight: 'bold', fontSize:18 }}>Leagues</Link></Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link eventKey="link-3"><Link to="/analytics" style={{ textDecoration: 'none',  fontWeight: 'bold', fontSize:18 }}> Analytics</Link></Nav.Link>
+    <Nav.Link  href="/analytics" eventKey="link-3"><Link to="/analytics" style={{ textDecoration: 'none',  fontWeight: 'bold', fontSize:18 }}> Analytics</Link></Nav.Link>
   </Nav.Item>
 </Nav>
         <Switch>
